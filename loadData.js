@@ -15,7 +15,7 @@ async function addToArray(req, indicator, countryID){
 }
 
 async function getData(){
-    const fixedPart = 'http://ec.europa.eu/eurostat/wdds/rest/data/v2.1/json/en/'
+    const fixedPart = 'https://ec.europa.eu/eurostat/wdds/rest/data/v2.1/json/en/'
     req1 = fixedPart + 'demo_mlexpec?precision=1&sex=T&age=Y1'                   // life expectancy
     req2 = fixedPart + 'demo_pjan?precision=1&sex=T&age=TOTAL'                   // population
     req3 = fixedPart + 'sdg_08_10?na_item=B1GQ&precision=1&unit=CLV10_EUR_HAB'   // gdp
