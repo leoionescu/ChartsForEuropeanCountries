@@ -1,40 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Proiect</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="loadData.js"></script>
     <script src="svg-bar-chart-library.js"></script>
     <script src="svg-bubble-chart-library.js"></script>
     <script src="drawSVG.js" defer></script>
     <script src="index.js" defer></script>
-</head>
-<body>
-    <h1 class="title">Grafic Evolutie Pentru Un Indicator</h1>
+  </head>
+  <body>
+    <!-- <h1 class="title">Grafic Evolutie Pentru Un Indicator</h1> -->
+    <h1 class="title">Evolution Of An Indicator Over Time</h1>
     <select id="selectValue" class="select" name="selectValue">
-        <option value="SV">Speranta de Viata</option>
-        <option value="POP">Populatie</option>
-        <option value="PIB">PIB</option>
+      <!-- <option value="SV">Speranta de Viata</option> -->
+      <option value="SV">Life Expectancy</option>
+      <!-- <option value="POP">Populatie</option> -->
+      <option value="POP">Population</option>
+      <!-- <option value="PIB">PIB</option> -->
+      <option value="PIB">GDP</option>
     </select>
     <select id="selectCountry" class="select" name="selectCountry"></select>
     <div id="barChart" class="chart"></div>
     <div id="toolTip" class="barToolTip">
-        <p id="year">1</p>
-        <p id="value">2</p>
+      <p id="year">1</p>
+      <p id="value">2</p>
     </div>
-    <h1 class="title">Bubble Chart Pentru Un An</h1>
-    <select id="selectBubbleChartYear" class="select" name="selectBubbleChartYear"></select>
+    <!-- <h1 class="title">Bubble Chart Pentru Un An</h1> -->
+    <h1 class="title">Bubble Chart For 1 Year</h1>
+    <select
+      id="selectBubbleChartYear"
+      class="select"
+      name="selectBubbleChartYear"
+    ></select>
     <div id="bubbleChart" class="chart"></div>
-    <h1 class="title">Animatie Bubble Chart</h1>
+    <!-- <h1 class="title">Animatie Bubble Chart</h1> -->
+    <h1 class="title">Bubble Chart Animation</h1>
     <div id="bubbleChartAnimation" class="chart"></div>
     <div id="bubbleToolTip" class="bubbleToolTip">
-        <p id="tara">1</p>
-        <p id="populatie">2</p>
-        <p id="pib">3</p>
-        <p id="sperantaDeViata">4</p>
+      <p id="tara">1</p>
+      <p id="populatie">2</p>
+      <p id="pib">3</p>
+      <p id="sperantaDeViata">4</p>
     </div>
-</body>
+  </body>
 </html>
